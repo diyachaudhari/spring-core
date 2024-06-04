@@ -7,6 +7,11 @@
     <!-- bean definitions here -->
     
     <bean id="studentBean" class="com.Bean.StudentBean"></bean>
+    <bean id="AddressBean" class="com.Bean.AddressBean"></bean>
+    <bean id="AuthorBean" class="com.Bean.AuthorBean"></bean>
+    <bean id="BookBean" class="com.Bean.BookBean">
+    	<constructor-arg ref="AuthorBean"></constructor-arg>
+    </bean>
 
 </beans>
 	
